@@ -1,0 +1,15 @@
+apply plugin: 'war'
+apply plugin: ProvidedBasePlugin
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(":shared-component")
+}
+
+task explodedWar(type: Copy) {
+    into "$buildDir/libs/exploded"
+    with war
+}

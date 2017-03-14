@@ -1,0 +1,3 @@
+rootProject.name='Transitive-dependencies-in-scope-provided-are-not-included-in-war-archive'
+include 'shared-component'
+include 'webapp-component'

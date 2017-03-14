@@ -1,0 +1,10 @@
+apply plugin: 'java'
+apply plugin: ProvidedBasePlugin
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    provided 'org.apache.commons:commons-lang3:3.3.2'
+}
